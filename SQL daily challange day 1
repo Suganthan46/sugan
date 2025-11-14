@@ -3,4 +3,30 @@
 
 
 create database hospital;
-use hospital
+use hospital;
+
+--- write the sql command (patient_id,patient_name,patient_gender,patient_admissiondate)
+create table patients(
+patients_id int primary key,
+patients_name varchar(100),
+age int,
+gender enum ('m','f'),
+admission_date date
+);
+
+-- alter add column table---
+alter table patients add column doctor_assigned varchar(100);
+
+-- rename the column--
+alter table patients rename to patients_info;
+
+
+-- modify the table--
+alter table patients_info modify patients_name varchar(105);
+
+-- truncate table--
+truncate table patients_info;
+
+
+-- drop the table--
+drop table patients_info;
