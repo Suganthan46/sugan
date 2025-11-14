@@ -1,1 +1,2 @@
-# sugan
+
+--- day 1 challages completed--
